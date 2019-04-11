@@ -56,8 +56,13 @@
     justify-content: space-between;
 
     .destination {
+      .flex-center-column();
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .btn(@white, @button-bg, @btnpadding);
+      }
     }
-  }
+}
 } // home
