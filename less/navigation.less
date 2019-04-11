@@ -1,1 +1,35 @@
 // Navigation Styles here
+header {
+  .flex-center-row();
+  width: 100%;
+  height: 9rem;
+  margin: 0 auto;
+  padding: 0 auto;
+  border-bottom: 2px dashed @navigation-border;
+
+  .top-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 800px;
+
+    nav {
+      display: flex;
+      align-items: center;
+      float: right;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        margin: 0rem 2rem;
+        
+
+        &:hover {
+          text-decoration: underline;
+          color: black;
+        }
+      }
+    }
+  }
+}
