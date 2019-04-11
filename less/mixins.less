@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .flex-center-row {
@@ -14,14 +13,17 @@
 }
 
 .btn (@color, @btncolor, @btnpadding) {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    margin: 0 auto;
-    background: @btncolor;
-    color: @color;
-    padding: @btnpadding;
-    border-radius: 15px;
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  background: @btncolor;
+  color: @color;
+  padding: @btnpadding;
+  border-radius: 15px;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
 }
+
+// Mobile Styling
+@mobile: ~"(max-width: 500px)";
